@@ -1,24 +1,26 @@
 # Golf ball simulator
-Updated version of https://github.com/s-ballantyne/gdp, complete with a GUI
-
-
-## Dependencies
-- [Qt 5](https://doc.qt.io/qt-5/)
-- [Qwt](https://qwt.sourceforge.io/)
-
-## Building
-```
-todo
-```
-
-## Usage
-```
-todo
-```
+Updated version of
+https://github.com/s-ballantyne/gdp
+with a UI
 
 ## To-do
-1. Make it functional
-2. Fix it so qmake automatically finds Qwt
+- Implement `BallView` which will contain golfball model type, initial conditions, etc.
+- Rework `BallController` to accommodate `BallView`
+- Implement all golfball models
+- Ballistic trajectory plot
+- Carry distance against loft angle plot
+
+## Dependencies
+- [Python 3](https://www.python.org/)
+- [Qt for Python (PySide2)](https://www.qt.io/qt-for-python) for the UI
+- [NumPy](https://numpy.org/) for number crunching
+- [SciPy](https://scipy.org/) for integration/solving ODEs
+- [Matplotlib](https://matplotlib.org/) for plotting results
+
+`pip3 install pyside2 numpy scipy matplotlib`
+
+## Usage
+`./main.py` or `python3 main.py`
 
 ## License
-GPL v3. See [LICENSE](LICENSE) for full details.
+See [LICENSE](LICENSE)
